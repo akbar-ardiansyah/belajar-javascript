@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <!-- optional chaining -->
+    <div class="container mt-5">
+        <h1 class="gradient-text"># optional-chaining</h1>
+        <p>Optional chaining operator (?) merupakan operator yang digunakan untuk mengamankan ketika kita ingin
+            mengakses property sebuah object dari data nullish
+            Jika kita mencoba mengakses property dari sebuah object dari data nullish tanpa menggunakan optional
+            chaining operator, maka akan terjadi error
+        </p>
+        <pre class="hljs php">
+            <code>
+        const person = {
+            detail: {
+                name: "akbar",
+                age: 27,
+                status: "belum kawin"
+            },
+            address: {
+                country: "indonesia",
+                street: "jl.sukarno hatta",
+                sector: "darul imarah",
+                number: 123
+            }
+        };
+        let tester = person?.address?.sector;   //mengbil object dengan chaining
+        document.writeln(`${tester}`)
+        
+            </code>
+        </pre>
+        <h2 class="gradient-text">#hasil</h2>
+    </div>
+    <script>
+
+        // optional chaining
+        const person = {
+            address: {
+                country: "indonesia",
+                street: "jl.sukarno hatta",
+                sector: "darul imarah",
+                number: 123
+            },
+            detail: {
+                name: "solong",
+                type: "warung kopi",
+                menu: "kopi, teh, susu",
+            }
+        };
+        let tester = person?.address?.sector;
+        document.writeln(`<div class="container"><h1>${tester}</h1></div>`)
+
+    </script>
+
+
+
+    <!-- begin script -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>

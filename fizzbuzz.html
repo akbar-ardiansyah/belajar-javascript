@@ -12,27 +12,25 @@
 <body>
     <div id="navbar"></div>
 
-    <script>
-        var total = 100;
-        for (var i = 0; i < total; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                document.writeln("FizzBuzz<br>");
-            } else if (i % 3 == 0) {
-                document.writeln("Fizz<br>");
-            } else if (i % 5 == 0) {
-                document.writeln("Buzz<br>");
-            } else {
-                document.writeln(i + "<br>");
-            }
-        }
-    </script>
-
-
 
 
     <!-- begin script -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="src/script.js"></script>
+    <script>
+        var total = 50;
+        for (var i = 1; i < total; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                document.writeln("<div class='container mt-5'>FizzBuzz<br></div>");
+            } else if (i % 3 == 0) {
+                document.writeln("<div class='container'>Fizz<br></div>");
+            } else if (i % 5 == 0) {
+                document.writeln("<div class='container'>Buzz<br></div>");
+            } else {
+                document.writeln(`<div class='container'>${i}<br></div>`);
+            }
+        }
+    </script>
 
 </body>
 

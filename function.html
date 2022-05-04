@@ -12,20 +12,83 @@
 <body>
     <div id="navbar"></div>
 
+    <!-- Function -->
+    <div class="container mt-5">
+        <h1 class="gradient-text"># Function</h1>
+        <p>Function adalah blok kode program yang akan berjalan saat kita panggil
+            Sebelumnya kita sudah menggunakan function writeln() untuk menampilkan tulisan di html
+            Untuk membuat function, kita bisa menggunakan kata kunci function, lalu diikuti dengan nama function, kurung
+            () dan diakhiri dengan block kurung {}
+            Kita bisa memanggil function dengan menggunakan nama function lalu diikuti dengan kurung ()
+            Di bahasa pemrograman lain, function juga disebut dengan method
+        </p>
+        <pre class="hljs php">
+            <code>
+    var coba, btn;
+    coba = document.getElementById("test");
+    btn = document.getElementById("btn");
 
-    <div class="container">
+    function test(){
+    coba.innerHTML = 'hello';
+    }
+
+    btn.addEventListener('click', test);
+            </code>
+        </pre>
+        <div class="row mt-5">
+            <div class="columns align-center ">
+                <div class="column is-one-fifth">
+                    <button id="btn" class="button is-primary">coba</button>
+                    <span id="test">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Function Parameter -->
+    <div class="container mt-5">
+        <h1 class="gradient-text"># Function parameter</h1>
+        <p>Kita bisa mengirim informasi ke function yang ingin kita panggil
+            Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di function yang sudah kita
+            buat
+            Parameter ditempatkan di dalam kurung () di deklarasi method
+            Parameter bisa lebih dari satu, jika lebih dari satu, harus dipisah menggunakan tanda koma
+
+        </p>
+        <pre class="hljs php">
+            <code><p style="color:grey">
+        // memanggil function dengan  parameter</p>
+        function person(firstName, lastName) {
+            document.writeln(`${firstName}:${lastName}`);
+        }
+        person("akbar", "ardiasyah");
+            </code>
+        </pre>
     </div>
 
 
     <script>
-        // function
+        // contoh function 
+        var coba, btn;
+        coba = document.getElementById("test");
+        btn = document.getElementById("btn");
+
+        function test() {
+            coba.innerHTML = 'hello';
+        }
+
+        btn.addEventListener('click', test);
+
+        // // function
         // function dataMahasiswa() {
         //     let namaSiswa = ['akbar', 'doni', 'ariep', 'rahmat', 'fuad'];
         //     return namaSiswa;
         // }
         // document.writeln(dataMahasiswa());
 
-        // memanggil function dengan  parameter
+        // // memanggil function dengan  parameter
         // function users(name, password) {
         //     document.writeln(`${name}:${password}`);
         // }
@@ -59,19 +122,19 @@
 
         // contoh 3
 
-        function isContains(array, searchValue) {
-            for (const element of array) {
-                if (element === searchValue) {
-                    return true;
-                }
-            }
-            return false;
-        }
+        // function isContains(array, searchValue) {
+        //     for (const element of array) {
+        //         if (element === searchValue) {
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
 
-        var array = ['akbar', 'arief', 'fuad', 'ryon'];
-        var search = "fuad";
-        var found = isContains(array, search)
-        document.writeln(found);
+        // var array = ['akbar', 'arief', 'fuad', 'ryon'];
+        // var search = "fuad";
+        // var found = isContains(array, search)
+        // document.writeln(found);
 
 
 

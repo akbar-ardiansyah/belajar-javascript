@@ -20,7 +20,7 @@ body#darkmode .nav-item {
 body#darkmode .nav-item,
 body#darkmode .nav-sub-menu,
 body#darkmode .nav-sub-menu-item {
-	background: #2d2d2d
+	background: transparent
 }
 
 body#darkmode .nav-item .nav-sub-menu-item,
@@ -1672,4 +1672,8 @@ pre code {
 
   a{
       text-decoration: none !important;
+  }
+
+  .mt-5{
+      margin-top: 50px;
   }
