@@ -13,8 +13,42 @@
     <div id="navbar"></div>
 
 
+    <div class="container">
+        <div class="row mt-5">
+            <div class="columns align-center ">
+                <div class="column is-one-fifth">
+                    <button id="btn" class="button is-primary">klik di sini</button>
+                    <div id="test"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        var coba, btn;
+        coba = document.getElementById("test");
+        btn = document.getElementById("btn");
+
+        function test() {
+            coba.innerHTML = 'hello';
+        }
+
+        btn.addEventListener('click', test);
+
+
+    </script>
+
+
+
+
+
+
+    <!-- begin script -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="src/script.js"></script>
+
 </body>
 
 </html>
