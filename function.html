@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+
+    <div class="container">
+    </div>
+
+
+    <script>
+        // function
+        // function dataMahasiswa() {
+        //     let namaSiswa = ['akbar', 'doni', 'ariep', 'rahmat', 'fuad'];
+        //     return namaSiswa;
+        // }
+        // document.writeln(dataMahasiswa());
+
+        // memanggil function dengan  parameter
+        // function users(name, password) {
+        //     document.writeln(`${name}:${password}`);
+        // }
+        // users("akbar", "123123");
+
+        // mengembalikan nilai dengan  return
+        // function biodata(firstName, lastName) {
+        //     const bio = `${firstName}${lastName}`;
+        //     return bio;
+        // }
+        // var result = biodata("fuad", " bawazier");
+        // document.writeln(result)
+
+        // contoh 2
+        // function getFinalValue(value) {
+        //     if (typeof value == "string") {
+        //         return 'nilai tidak boleh berisi huruf';
+        //     } else {
+        //         if (value > 89) {
+        //             return 'A';
+        //         } else if (value > 50) {
+        //             return "B";
+        //         } else {
+        //             return 'tidak lulus';
+        //         }
+        //     }
+        // }
+
+        // var result = getFinalValue(90);
+        // document.writeln(result);
+
+        // contoh 3
+
+        function isContains(array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        var array = ['akbar', 'arief', 'fuad', 'ryon'];
+        var search = "fuad";
+        var found = isContains(array, search)
+        document.writeln(found);
+
+
+
+
+
+
+    </script>
+    <!-- begin script -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>
